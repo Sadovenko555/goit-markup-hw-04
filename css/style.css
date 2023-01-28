@@ -193,7 +193,18 @@ img {
 }
 .hero-section {
   padding: 188px 0;
-  background-color: var(--bg-navy-blue);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -234,6 +245,17 @@ img {
 
 .strategy-section {
   padding-bottom: 0;
+}
+
+.strategy-icon-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: var(--bg-cloud);
+  border-radius: 4px;
 }
 
 .strategy-title {
@@ -294,10 +316,112 @@ img {
   border-top: 0;
 }
 
+.networks {
+  margin-bottom: 8px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  background-color: var(--bg-iris);
+  border-radius: 50%;
+}
+
+.social-icon {
+  fill: var(--cloud);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: var(--bg-ocean);
+}
+
+.customers-section {
+  padding-top: 130px;
+}
+
+.customers-social-networks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+  margin: auto;
+}
+
+.customers-social-items {
+  width: 168px;
+}
+
+.customers-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88px;
+  color: var(--light-slate);
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+}
+
+.customers-social-icon {
+  fill: currentColor;
+}
+
+.customers-social-link:hover,
+.customers-social-link:focus {
+  color: var(--ocean);
+  border: 1px solid var(--ocean);
+}
+
+.footer-wrapper {
+  display: flex;
+}
+
 .footer-section {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--bg-navy-blue);
+}
+
+.footer-social-networks {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-logo-conteiner {
+  margin-right: 120px;
+}
+
+.footer-section-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background: var(--green);
 }
 
 .filter-list {
