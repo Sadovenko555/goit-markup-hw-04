@@ -201,7 +201,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(./images/hero.jpg);
+    url("/images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -393,6 +393,14 @@ img {
   background-color: var(--bg-navy-blue);
 }
 
+.footer-content {
+  width: 264px;
+  margin-top: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cornflower);
+}
+
 .footer-social-networks {
   display: flex;
   gap: 16px;
@@ -477,10 +485,12 @@ img {
   background-color: #ffffff;
 }
 
-.footer-content {
-  width: 264px;
-  margin-top: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--cornflower);
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
